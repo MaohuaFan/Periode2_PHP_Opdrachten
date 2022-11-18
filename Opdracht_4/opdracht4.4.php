@@ -14,7 +14,11 @@
         echo "$product";
         }
         elseif ($product < 55){
-        $product = $product * 1.11;
+            $product = $product * 1.11;
+            echo "$product";
+        }
+        else {
+            echo "$product";
         }
     ?>
 </body>
