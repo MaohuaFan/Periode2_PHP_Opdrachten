@@ -8,7 +8,14 @@
 </head>
 <body>
     <?php
-        
+        $product = 56;
+        if ($product > 150){
+        $product = $product * 1.19;
+        echo "$product";
+        }
+        elseif ($product < 55){
+        $product = $product * 1.11;
+        }
     ?>
 </body>
 </html>
