@@ -8,9 +8,15 @@
 </head>
 <body>
     <?php
-        #Maak een PHP pagina waarin je 2 string variabelen op het scherm laat zien met echo.
-        #Maak ook 2 variabelen met een getal en laat deze met print op het scherm tonen.
-        
+        $tekst1 = "<h1>Vrijdag</h1>";
+        $tekst2 = "<p>bijna weekend!</p>";
+        echo "$tekst1";
+        echo "$tekst2";
+        $getal1 = 5;
+        $getal2 = 10;
+        echo "$getal1<br>";
+        echo "$getal2";
+
     ?>
 </body>
 </html>
