@@ -8,17 +8,17 @@
 </head>
 <body>
     <?php
-        $product = 56;
+        $product = 54;
         if ($product > 150){
         $product = $product * 1.19;
-        echo "$product";
+        echo "De nieuwe prijs is $product";
         }
         elseif ($product < 55){
             $product = $product * 1.11;
-            echo "$product";
+            echo "De prijs is gestegen tot$product";
         }
         else {
-            echo "$product";
+            echo "het prijs is $product geleven";
         }
     ?>
 </body>
