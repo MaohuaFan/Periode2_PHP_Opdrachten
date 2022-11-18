@@ -9,5 +9,10 @@
 <body>
     <h1>Hallo Wereld!</h1>
     <p>Heb nog geen boek</p>
+    <?php
+        echo date("l") . "<br>";
+        echo date("l") . "<br>";
+        echo date("l") . "<br>";
+    ?>
 </body>
 </html>
