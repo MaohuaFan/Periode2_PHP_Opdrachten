@@ -14,8 +14,8 @@
         echo "$tekst2";
         $getal1 = 5;
         $getal2 = 10;
-        echo "$getal1<br>";
-        echo "$getal2";
+        print "$getal1<br>";
+        print "$getal2";
 
     ?>
 </body>
