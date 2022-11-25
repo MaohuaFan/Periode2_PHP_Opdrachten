@@ -7,9 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-        $getal1 = 1;
-        
+<form action="#" method="post">
+    <input type="number" name="getal" placeholder="Vul een getal in...">
+    <input type="submit" value="Verzenden">
+</form>
+    <?php 
+        if(isset($_POST['getal'])){
+            $getal = $_POST['getal'];
+            echo"Is het getal $getal even? ";
+            if($getal % 2 == 0){
+                echo"Ja";
+            }
+            elseif($getal % 2 == 1){
+                echo"Nee";
+            }
+        }
     ?>
 </body>
 </html>
