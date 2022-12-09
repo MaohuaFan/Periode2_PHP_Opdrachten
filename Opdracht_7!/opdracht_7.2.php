@@ -18,9 +18,9 @@
     </form>
 
     <?php
-        $waarde = $_POST['rekenen'];
-        $getal1 = $_POST['getal1'];
-        $getal2 = $_POST['getal2'];
+        $waarde = $_POST["rekenen"];
+        $getal1 = $_POST["getal1"];
+        $getal2 = $_POST["getal2"];
 
         switch($waarde) {
             case"optellen":

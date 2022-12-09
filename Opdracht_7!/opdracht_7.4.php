@@ -7,6 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form action="#" method="post">
+    Prijs <input type="number" name="geldbedrag" value="prijs"><br>
+    Korting (%) <input type="number" name="geldbedrag" value="korting">
+    <br><input type="submit" name="uitrekenen" value="Uitrekenen">
+    </form>
+
+    <?php
+
+        if(isset($_POST["geldbedrag"])) {
+            function number_formats() {
+            $prijs = $_POST["prijs"];
+            $korting = 100 - $_POST["korting"];
+            $som = $prijs * $korting;
+            echo"Bedrag inclusief $korting% korting: €$som";
+            }
+        }
+    ?>
 </body>
 </html>
