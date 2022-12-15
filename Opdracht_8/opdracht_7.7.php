@@ -9,18 +9,24 @@
 <body>
     <form action="#" method="post">
         Startkapitaal: <input type="number" name="kapitaal" value="kapitaal">
-        Rentepercentage: <input type="number" name="rente" value="rente">
-        Jaarlijke opname: <input type="number" name="opname" value="opname">
-        <input type="submit" value="Bereken de looptijd">
-        <?php
-        if (isset($_POST["submit"])) {
-            $startkapitaal = $_POST["kapitaal"];
-            $rente = $_POST["rente"];
-            $opname = $_POST["opname"];
-            $som = ($startkapitaal * $rente) / $opname;
-            echo "U kunt $som jaar lang €$opname opnemen.";
-        }
-        ?>
+    <br>Rentepercentage: <input type="number" name="rente" value="rente">
+    <br>Jaarlijkse opname: <input type="number" name="opname" value="opname">
+    <br><input type="submit" name="uitrekenen" value="Uitrekenen" >
     </form>
+
+    <?php
+    if(isset($_POST["uitrekenen"])) {
+        $kapitaal = $_POST["kapitaal"];
+        $rente = $_POST["rente"];
+        $opname = $_POST["opname"];
+        $teller = 0;
+        while ($som != 0) {
+            $som = $kapitaal * (1+($rente/100));
+            $teller++;
+        }
+        echo"U kunt $teller jaar lang $opname opnemen";
+    }
+
+    ?>
 </body>
 </html>
