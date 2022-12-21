@@ -8,9 +8,9 @@
 </head>
 <body>
     <form action="#" method="post">
-        Startkapitaal: <input type="number" name="start" value="100000">   <br>
-        Rentepercentage: <input type="number" name="rente" value="4" max="8">   <br>
-        Jaarlijkse opname: <input type="number" name="opname" value="5000" min="4700">   <br>
+        Startkapitaal: <input type="number" name="start" placeholder="100000" required><br>
+        Rentepercentage: <input type="number" name="rente" placeholder="4" max="8" required><br>
+        Jaarlijkse opname: <input type="number" name="opname" placeholder="5000" min="4700" required><br>
         <input type="submit" value="Toevoegen">
     </form>
 

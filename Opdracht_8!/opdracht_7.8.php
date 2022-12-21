@@ -11,10 +11,13 @@
 </head>
 <body>
     <h1>Array items toevoegen in een sessie</h1>
-    <form action="#" method="post">
-    <input type="text" name="items" value="Appel"> <br>
+    <form action="" method="post">
+    <input type="text" name="item" placeholder="Appel"> <br>
     <input type="submit" name="submit" value="Toevoegen">
     </form><br>
+    <a href="opdracht_7.8.php?knop=schudden">Schudden</a><br>
+    <a href="opdracht_7.8.php?knop=sorteren">Sorteren</a><br>
+    <a href="opdracht_7.8.php?knop=wissen">Wissen</a><br>
 
     <?php
     error_reporting(0);
@@ -40,6 +43,12 @@
     if(isset($_GET["knop"])) {
         if($_GET["knop"] == "schudden") {
             shuffle($_SESSION["lijst"]);
+        }
+    }
+
+    if(isset($_GET["knop"])) {
+        if($_GET["knop"] == "sorteren") {
+            sort($_SESSION["lijst"]);
         }
     }
 
