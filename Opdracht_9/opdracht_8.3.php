@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <?php
+    include("opdracht_8.2.php");
+    ?>
 </body>
 </html>

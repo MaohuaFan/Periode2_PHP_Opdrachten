@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <p>Database Fietsenmaker gemaakt op localhost</p>
 </body>
 </html>

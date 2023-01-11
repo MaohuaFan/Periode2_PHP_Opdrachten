@@ -7,6 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+    <?php
+    $db = new PDO("mysql:host=localhost;dbname=fietsenmaker","root","");
     
+    ?>
 </body>
 </html>
