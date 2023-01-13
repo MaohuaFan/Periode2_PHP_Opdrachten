@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style9.1b.css">
 </head>
-<body>
+<body></body>
     <?php
     try {
         $db = new PDO("mysql:host=localhost;dbname=fietsenmaker", "root", "");
